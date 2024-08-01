@@ -1,54 +1,43 @@
-# Turborepo starter
+# nextjs-monorepo
 
-This is an official starter Turborepo.
+Best practices on using Next.js in a TypeScript monorepo
 
-## Using this example
+## highlight features
 
-Run the following command:
+- Using `Turborepo`
+- Integrated internationalization with `next-intl `.
+- Integrated package manager `yarn@4.3.1`
+- Configure the behavior of turbo by adding a `turbo.json` file in your Workspace's root directory [turbo](https://turbo.build/repo/docs/reference/configuration)
+- Using next.js `app-router`
+- Integrated `tailwindcss`
+- Integrated `eslint V9`
+- Integrated `hyperse next-env` for auto customized environment over next.js
+- Integrated `zod`
+- Integrated `@svgr/webpack` allow directly import `.svg` as `component`
+- Integrated `vitest` for unitest also support `tspath alias`
+- Integrated `husky` for commit hook
+- Integrated `lint-staged` for commit hook
+- Integrated `git cz`
+- Integrated `changesets`
+- Integrated `commitlint`
+- Integrated `code-inspector-plugin`(`[shift + ⌥option]`) to resolve `page/component's` code is located.
 
-```sh
-npx create-turbo@latest
-```
+## tsconfig.json
 
-## What's inside?
+- tsconfig.json (vitest, eslint)
+- tsconfig.dev.json `yarn dev`
+- tsconfig.build.json `yarn build`
 
-This Turborepo includes the following packages/apps:
+## Note
 
-### Apps and Packages
+the `paths` tsconfig.json also can be resolved for `apps/*`, we should avoid to use `ts paths` alias to write code for `mono-module` like `core`
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+1. `utils` we can use `alias`
+2. `core` we should not use `alias`
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+If you are looking for single repo next.js best practices starter please see below link
 
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
+https://github.com/hyperse-io/next.js-starter
 
 ### Remote Caching
 
