@@ -1,8 +1,10 @@
 {
   "name": "web",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
+  "repository": "https://github.com/hyperse-io/nextjs-monorepo-starter",
+  "license": "MIT",
   "scripts": {
     "build": "next build",
     "build-docker": "cross-env NEXT_BUILD_ENV_OUTPUT=standalone next build",
