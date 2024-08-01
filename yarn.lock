@@ -3043,7 +3043,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20, @types/node@npm:^20.0.0":
+"@types/node@npm:^20.0.0":
   version: 20.14.13
   resolution: "@types/node@npm:20.14.13"
   dependencies:
@@ -3059,16 +3059,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18":
-  version: 18.3.0
-  resolution: "@types/react-dom@npm:18.3.0"
-  dependencies:
-    "@types/react": "npm:*"
-  checksum: 10/6ff53f5a7b7fba952a68e114d3b542ebdc1e87a794234785ebab0bcd9bde7fb4885f21ebaf93d26dc0a1b5b93287f42cad68b78ae04dddf6b20da7aceff0beaf
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:*, @types/react@npm:^18, @types/react@npm:latest":
+"@types/react@npm:latest":
   version: 18.3.3
   resolution: "@types/react@npm:18.3.3"
   dependencies:
@@ -4933,14 +4924,13 @@ __metadata:
   dependencies:
     "@hyperse/core": "workspace:*"
     "@hyperse/eslint-config-hyperse": "npm:^1.0.12"
-    "@types/node": "npm:^20"
-    "@types/react": "npm:^18"
-    "@types/react-dom": "npm:^18"
+    "@types/node": "npm:^22.0.2"
+    "@types/react": "npm:latest"
     eslint: "npm:^9.8.0"
     next: "npm:^14.2.5"
     react: "npm:latest"
     react-dom: "npm:latest"
-    typescript: "npm:^5"
+    typescript: "npm:5.5.4"
   languageName: unknown
   linkType: soft
 
@@ -8685,9 +8675,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next.js-turborepo@workspace:.":
+"next.js-monorepo-starter@workspace:.":
   version: 0.0.0-use.local
-  resolution: "next.js-turborepo@workspace:."
+  resolution: "next.js-monorepo-starter@workspace:."
   dependencies:
     "@changesets/changelog-github": "npm:0.5.0"
     "@changesets/cli": "npm:2.27.7"
@@ -11132,7 +11122,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.5.4, typescript@npm:^5, typescript@npm:^5.5.4":
+"typescript@npm:5.5.4, typescript@npm:^5.5.4":
   version: 5.5.4
   resolution: "typescript@npm:5.5.4"
   bin:
@@ -11142,7 +11132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.4#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.4#optional!builtin<compat/typescript>":
   version: 5.5.4
   resolution: "typescript@patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"
   bin:

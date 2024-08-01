@@ -1,8 +1,17 @@
 {
-  "name": "next.js-turborepo",
+  "name": "next.js-monorepo-starter",
   "private": true,
-  "type": "module",
+  "repository": "https://github.com/hyperse-io/next.js-monorepo-starter",
   "description": "Best practices on using Next.js in a TypeScript monorepo",
+  "type": "module",
+  "keywords": [
+    "monorepo",
+    "next.js",
+    "typescript",
+    "yarn next.js monorepo",
+    "turbo"
+  ],
+  "license": "MIT",
   "workspaces": [
     "apps/*",
     "packages/*"

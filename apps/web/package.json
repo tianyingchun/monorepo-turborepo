@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "repository": "https://github.com/hyperse-io/nextjs-monorepo-starter",
@@ -8,7 +8,7 @@
   "scripts": {
     "build": "next build",
     "build-docker": "cross-env NEXT_BUILD_ENV_OUTPUT=standalone next build",
-    "dev": "next dev --port 3001",
+    "dev": "next dev",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
     "start": "next start",
     "next-lint": "next lint",
